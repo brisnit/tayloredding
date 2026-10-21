@@ -3,3 +3,31 @@
 
 /* Vector icons avoid platform-dependent symbol and emoji fonts. */
 .icon{display:inline-block;width:1em;height:1em;flex-shrink:0;vertical-align:-.13em;overflow:visible;letter-spacing:normal}.wordmark .icon{width:.7em;height:.7em;margin-left:.12em}.asterisk{line-height:1;width:1em;height:1em}.asterisk .icon{display:block;width:100%;height:100%}.sticker>span,.round-link>span{display:inline-flex;line-height:1}.record-image>span .icon{width:26px;height:26px}.interlude>p>span{line-height:1;width:1em;height:1em}.interlude>p>span .icon{display:block;width:100%;height:100%}footer h2>a{display:block;line-height:1;width:1em;height:1em}footer h2>a .icon{display:block;width:100%;height:100%}@media(max-width:700px){.record-image>span .icon{width:20px;height:20px}}
+
+/* Mobile navigation and bounded layouts. */
+.menu-toggle{display:none}main{min-width:0}img{max-width:100%}.release-layout>*,.about-grid>*,.records>*{min-width:0}
+@media(max-width:700px){
+html,body{width:100%;max-width:100%;overflow-x:clip}
+header{position:relative;gap:12px;padding-inline:6%;isolation:isolate;z-index:20}
+.wordmark{margin-right:auto;white-space:nowrap}
+header .menu-toggle{display:inline-flex;align-items:center;gap:8px;font-size:11px;padding:8px 12px;order:3}
+header #motion{order:2;font-size:9px}
+header nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--ink);padding:10px 6% 20px;box-shadow:0 12px 18px #00000012}
+header nav.is-open{display:flex}header nav a{font-size:17px;padding:16px 0;border-bottom:1px solid #24282026}
+.hero{width:100%;padding-inline:6%;min-height:740px}
+.hero h1{font-size:22vw;letter-spacing:-.075em;width:100%}
+.hero .surname{white-space:nowrap}.asterisk{margin-left:2%;font-size:.42em}
+.hero-art{width:50%;right:13%;top:280px}.hero-art figcaption{line-height:1.5}
+.hero-bottom{left:6%;right:6%}.hero-bottom p{max-width:57%}.round-link{gap:14px}
+.cover-wrap{padding:16px 24px}.cover-stamp{right:0;width:95px;height:95px;font-size:19px}
+.release-info h2{font-size:clamp(50px,16vw,80px);letter-spacing:-.055em;overflow-wrap:anywhere}
+.release-layout,.about-grid{width:100%}.section-label{flex-wrap:wrap}
+.player-heading{flex-wrap:wrap}.player iframe{max-width:100%}
+.interlude>p{font-size:15vw;letter-spacing:-.055em}.interlude>p>span{font-size:24vw;right:0}
+.archive h2{font-size:10vw;letter-spacing:-.045em}
+.records{gap:20px}.record h3{overflow-wrap:anywhere}.record h3 small{display:block}
+.about h2{font-size:16vw;letter-spacing:-.055em}.about figure{width:min(78%,270px)}
+.about blockquote{overflow-wrap:anywhere}.text-link{line-height:1.8}
+footer h2{font-size:18vw;letter-spacing:-.06em}footer h2>a{font-size:.8em}
+.footer-bottom>*{max-width:100%;overflow-wrap:anywhere}
+}
